@@ -1,0 +1,300 @@
+$bg-cl-1: #F1F5F8;
+$bg-cl-2: #EEEEEC;
+$bg-cl-3: #D6DFE6;
+
+html,
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-master {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    overflow: auto;
+
+}
+.box-1{
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-cl-1;
+    width: 30%;
+}
+.box-2{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 70%;
+    border-left: 1px solid $bg-cl-2;
+}
+.header-b1{
+    height: 70px;
+    background-color: $bg-cl-3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-b2{
+    height: 80px;
+    background-color: rgba(80,157,225,255);
+    color: #CCF7FF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-list-b2{
+    width: 60%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-start;
+}
+.friends{
+    display: inline-flex;
+    background-color: #65ACE6;
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    justify-content: center;
+  align-items: center;
+}
+.chat-box-b2{
+    display: flex;
+    height: 100%;
+}
+.chat{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+.online-user{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    background-color: $bg-cl-1;
+}
+.online-user-header{
+    height: 60px;
+    border-bottom: 1px solid #E7ECEF;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+
+}
+.imageClass{
+    width: 18%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: stretch;
+}
+.avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 15%;
+  }
+.online-user-header-content{
+    color: #93B6D2;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chat-header{
+    display: flex;
+    height: 66px;
+	justify-content: space-around;
+	align-items: center;
+	align-content: flex-start;
+    border-bottom: 1px solid $bg-cl-2;
+}
+.header-content-1{
+    color: #89ACC2;
+    font-size: large;
+    width: 40%;
+}
+.header-content-2{
+    display: flex;
+    flex-wrap: nowrap;
+	align-items: center;
+	align-content: center;
+    width: 40%;
+}
+.dots-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.dots-icon-1{
+    background-color: $bg-cl-1;
+    width: 60px;
+    height: 40px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-b1{
+    display: flex;
+    height: 60px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+    border-bottom: 1px solid #E7ECEF;
+}
+.list-friends{
+    width: 40%;
+    color: rgb(111, 111, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-new{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-new1{
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    color: white;
+    font-size: small;
+    background-color: #4E9EDF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.friends-list-box{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+.friends-chat{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+.friends-chat-content{
+    height: 100px;
+    border-bottom: 1px solid #EBEFF0;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: stretch;
+}
+.badge {
+    position: absolute;
+    top: 140px;
+    right: 1310px;
+    padding: 4px 8px;
+    border-radius: 50%;
+    background-color: #4B9BDD;
+    border : 2px solid white;
+    color: white;
+  }
+  .online-user-list{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+  }
+  .online-user-list-content{
+    height: 70px;
+    border-bottom: 1px solid #EBEFF0;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: stretch;
+  }
+  .online-user-name-display{
+    width: 70%;
+    color: #5D6165;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+  }
+  .empty-box{
+    background-color: $bg-cl-3;
+    width: 45px;
+    height: 45px;
+    border-radius: 4px;
+  }
+  .online-user-name{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+    width: 50%;
+  }
+  .online-user-status{
+    width: 20%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: stretch;
+
+  }
+  .friends-chat-name-msg{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+  }
+  .chat-box-chat{
+    height: 100%;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: stretch;
+  }
+  .chat-box-chat-content{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: stretch;
+  }
